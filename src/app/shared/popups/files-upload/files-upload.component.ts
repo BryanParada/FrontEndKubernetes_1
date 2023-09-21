@@ -56,4 +56,8 @@ isHovering !: boolean;
 
   }
 
+  onUploadComplete(url: string) : void{
+    this.filesURLs.push(url);
+  }
+
 }
