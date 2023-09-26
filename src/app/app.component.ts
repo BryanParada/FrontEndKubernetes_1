@@ -23,6 +23,10 @@ export class AppComponent implements OnInit {
     this.showSpinner = !this.showSpinner;
   }
 
+  onFilesChanged(urls: string | string[]) : void{ //dependiendo si es un archivo | o varios
+    console.log('urls', urls);
+  }
+
 
 
 }

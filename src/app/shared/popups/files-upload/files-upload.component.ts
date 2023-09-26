@@ -60,4 +60,13 @@ isHovering !: boolean;
     this.filesURLs.push(url);
   }
 
+  onComplete(): void {
+    const res = this.data.multiple ? this.filesURLs : this.filesURLs[0];
+    this.dialogRef.close(res); // pasa data a cliente pagina base
+  }
+
+  onClose(): void {
+    this.dialogRef.close();
+  }
+
 }

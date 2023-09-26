@@ -4,4 +4,4 @@
 <app-spinner *ngIf="showSpinner"></app-spinner>
 
 <!-- almacena multiple imagenes temporalmente -->
-<button appFilesUpload [multiple]="true">Subir Imágenes al servidor</button>
+<button appFilesUpload [multiple]="true" (changed)="onFilesChanged($event)">Subir Imágenes al servidor</button>
