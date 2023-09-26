@@ -5,3 +5,7 @@
 
 <!-- almacena multiple imagenes temporalmente -->
 <button appFilesUpload [multiple]="true" (changed)="onFilesChanged($event)">Subir Imágenes al servidor</button>
+
+
+<button (click)="onSuccess()">Mensaje de exito</button>
+<button (click)="onError()">Mensaje de Error</button>
