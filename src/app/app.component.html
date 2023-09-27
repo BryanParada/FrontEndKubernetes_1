@@ -1,11 +1,26 @@
+<mat-sidenav-container>
+
+  <mat-sidenav #menu>
+    <p>Elemento Sidenav</p>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <button (click)="menu.toggle()">Abrir Menu</button>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+
+</mat-sidenav-container>
+
+<!--
 <button (click)="onToggleSpinner()">Toggle Spinner</button>
 
 
 <app-spinner *ngIf="showSpinner"></app-spinner>
 
-<!-- almacena multiple imagenes temporalmente -->
+ almacena multiple imagenes temporalmente
 <button appFilesUpload [multiple]="true" (changed)="onFilesChanged($event)">Subir Imágenes al servidor</button>
 
 
 <button (click)="onSuccess()">Mensaje de exito</button>
-<button (click)="onError()">Mensaje de Error</button>
+<button (click)="onError()">Mensaje de Error</button> -->
