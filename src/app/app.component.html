@@ -7,12 +7,7 @@
   <mat-sidenav-content>
     <!-- <button (click)="menu.toggle()">Abrir Menu</button> -->
 
-    <mat-toolbar color="primary">
-      <button mat-icon-button (click)="menu.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>Edificaciones Store</span>
-    </mat-toolbar>
+    <app-header></app-header>
 
     <main>
       <router-outlet></router-outlet>
