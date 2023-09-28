@@ -26,11 +26,14 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './components/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MenuListComponent } from './components/menu-list/menu-list.component';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    MenuListComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
