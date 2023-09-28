@@ -7,7 +7,7 @@
   <mat-sidenav-content>
     <!-- <button (click)="menu.toggle()">Abrir Menu</button> -->
 
-    <app-header></app-header>
+    <app-header (menuToggle)="menu.toggle()"></app-header>
 
     <main>
       <router-outlet></router-outlet>
